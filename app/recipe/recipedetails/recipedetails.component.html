@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recipeDetails</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card" *ngFor="let r of recipes">
+        <div class="picture">
+          <p>
+            <img
+              class="r-img"
+              src="{{ r.recipe_image }}"
+              alt="{{ r.recipe_name }}"
+              height="100"
+              width="100"
+            />
+          </p>
+        </div>
+        <div class="name">
+          <p>{{ r.recipe_name }}</p>
+        </div>
+        <div class="time">
+          <p>{{ r.recipe_time }}</p>
+        </div>
+        <div class="ingr">
+          <br />
+          <p>{{ r.recipe_ingredients }}</p>
+        </div>
+        <div class="details">
+          <br />
+          <p>{{ r.recipe_details }}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+.main{
+    display:flex;
+        flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  width: 22%;
+  height: 50%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f1f5f3;
+  box-shadow: 1px 5px 60px 0px #4646466b;
+}
+
+    .card .picture,
+    .card .name,
+    .card .time,
+    .card .details,
+    .card .ingr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.card .picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.picture img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+
+.buttons>div {
+  padding: .5em;
+}
+
+p{
+    text-align:justify;
+}
+.card .name p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1.5em;
+}
+
+.card .time p {
+  margin-bottom: 3%;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+.card .ingr p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 1.1em;
+}
+
+.card .details p {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-size: 1em;
+}
